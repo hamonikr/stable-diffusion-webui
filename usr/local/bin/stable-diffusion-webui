@@ -3,14 +3,37 @@
 # Define the directory
 DIR=~/stable-diffusion-webui
 
+# Function to handle errors
+handle_error() {
+  echo "Warning: $1"
+}
+
+# Check if git is installed
+if ! command -v git &> /dev/null; then
+  handle_error "git is not installed. Please install git first."
+  exit 1
+fi
+
+# Check if Python 3.10 is installed
+if ! command -v python3.10 &> /dev/null; then
+  handle_error "Python 3.10 is not installed. Please install Python 3.10 first."
+  exit 1
+fi
+
 # Check if the directory exists
 if [ ! -d "$DIR" ]; then
   # If not, clone the git repository
-  git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git "$DIR"
+  git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git "$DIR" || handle_error "Failed to clone repository"
 fi
 
 # Navigate to the directory
-cd "$DIR" || exit 1
+cd "$DIR" || handle_error "Failed to navigate to $DIR"
+
+# Create a Python virtual environment
+python3.10 -m venv venv || handle_error "Failed to create virtual environment"
 
 # Run the web UI script
-./webui.sh
+if ! ./webui.sh; then
+  handle_error "Failed to run web UI script. Attempting to run python launch.py"
+  python launch.py || handle_error "Failed to run python launch.py"
+fi

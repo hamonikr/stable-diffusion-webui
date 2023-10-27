@@ -1,3 +1,9 @@
+stable-diffusion-webui (1.0-2) unstable; urgency=low
+
+  * Fix venv error
+
+ -- Kevin Kim <chaeya@gmail.com>  Fri, 27 Oct 2023 17:36:38 +0900
+ 
 stable-diffusion-webui (1.0-1) unstable; urgency=low
 
   * Initial release.

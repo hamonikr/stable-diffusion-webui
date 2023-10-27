@@ -13,6 +13,11 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
           git,
           python3, 
           python3-pip, 
+          libglib2.0-0,
+          libgl1,
+          python3,
+          python3-pip,
+          python3.10-venv          
           rocm-dkms
 Description: Stable Diffusion Web UI Debian Package for AMD
  This package installs and runs the Stable Diffusion Web UI project for AMD GPUs.
@@ -26,9 +31,12 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
           nvidia-settings, 
           nvidia-utils, 
           libnvidia-decode, 
-          libnvidia-encode, 
-          python3, 
-          python3-pip
+          libnvidia-encode,
+          libglib2.0-0,
+          libgl1,
+          python3,
+          python3-pip,
+          python3.10-venv
 Description: Stable Diffusion Web UI Debian Package for NVIDIA
  This package installs and runs the Stable Diffusion Web UI project for NVIDIA GPUs.
  It clones the project from GitHub and sets up a virtual environment for Python 3.10.
