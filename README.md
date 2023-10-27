@@ -1,8 +1,20 @@
 ## Stable Diffusion Web UI
 
+![stable-diffusion-webui](./app.png)
+
 ### Overview
-Stable Diffusion 프로젝트를 쉽게 사용할 수 있도록 제작한 패키지입니다.
-이 프로젝트는 AMD와 NVIDIA GPU 모두와 호환됩니다.
+Stable Diffusion은 이미지 및 텍스트 생성 작업에 사용되는 알고리즘으로 최근 매우 인기있는 기술입니다.
+
+이 프로젝트는 Stable Diffusion Web UI 로 잘 알려진 프로젝트를 쉽게 사용할 수 있도록 제작한 패키지입니다. (AMD와 NVIDIA GPU 모두 호환)
+
+Stable Diffusion Web UI는 Gradio 라이브러리를 기반으로 한 웹 인터페이스로 다양한 이미지 및 텍스트 생성 기능을 제공하며, Python과 Git을 설치한 후에는 원클릭으로 설치 및 실행이 가능합니다. 
+
+주요 기능으로는 Outpainting, Inpainting, Color Sketch, Prompt Matrix, Stable Diffusion Upscale 등이 있습니다. 
+
+추가 정보 는 GitHub 링크를 참고하세요 : [Stable Diffusion Web UI GitHub](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+
+라이선스: AGPL-3.0
+
 
 #### 기능
 * 사용하기 쉬운 Stable Diffusion 웹 UI
