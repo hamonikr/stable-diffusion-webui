@@ -17,7 +17,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
           libgl1,
           python3,
           python3-pip,
-          python3.10-venv          
+          python3.10-venv,          
           rocm-dkms
 Description: Stable Diffusion Web UI Debian Package for AMD
  This package installs and runs the Stable Diffusion Web UI project for AMD GPUs.
