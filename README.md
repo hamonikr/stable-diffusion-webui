@@ -13,10 +13,9 @@ Stable Diffusion 프로젝트를 쉽게 사용할 수 있도록 제작한 패키
 AMD와 NVIDIA 시스템 모두에 대한 데비안 패키지를 제공합니다. .deb 파일을 다운로드 받아 다음과 같이 설치할 수 있습니다.
 
 ```
-sudo dpkg -i stable-diffusion-webui-amd.deb  # AMD용
+sudo apt-get install -f ./stable-diffusion-webui-amd.deb  # AMD용
 # 또는
-sudo dpkg -i stable-diffusion-webui-nvidia.deb  # NVIDIA용
-
+sudo apt-get install -f ./stable-diffusion-webui-nvidia.deb  # NVIDIA용
 ```
 
 설치 후에는 데스크톱 단축 아이콘을 사용하거나 다음 명령어를 실행하여 Web UI를 시작할 수 있습니다
