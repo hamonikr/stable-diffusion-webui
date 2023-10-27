@@ -1,0 +1,34 @@
+Source: stable-diffusion-webui
+Section: utils
+Priority: optional
+Maintainer: Kevin Kim <chaeya@gmail.com>
+Build-Depends: debhelper (>= 10), debhelper-compat (= 10), git, python3.10-venv
+Standards-Version: 4.5.0
+Homepage: https://github.com/AUTOMATIC1111/stable-diffusion-webui
+
+Package: stable-diffusion-webui-amd
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+          amdgpu-pro,
+          git,
+          python3, 
+          python3-pip, 
+          rocm-dkms
+Description: Stable Diffusion Web UI Debian Package for AMD
+ This package installs and runs the Stable Diffusion Web UI project for AMD GPUs.
+ It clones the project from GitHub and sets up a virtual environment for Python 3.10.
+
+Package: stable-diffusion-webui-nvidia
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+          git,
+          nvidia-driver | nvidia-driver-535 | nvidia-driver-525 | nvidia-driver-545, 
+          nvidia-settings, 
+          nvidia-utils, 
+          libnvidia-decode, 
+          libnvidia-encode, 
+          python3, 
+          python3-pip
+Description: Stable Diffusion Web UI Debian Package for NVIDIA
+ This package installs and runs the Stable Diffusion Web UI project for NVIDIA GPUs.
+ It clones the project from GitHub and sets up a virtual environment for Python 3.10.

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Define the directory
+DIR=~/stable-diffusion-webui
+
+# Check if the directory exists
+if [ ! -d "$DIR" ]; then
+  # If not, clone the git repository
+  git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git "$DIR"
+fi
+
+# Navigate to the directory
+cd "$DIR" || exit 1
+
+# Run the web UI script
+./webui.sh

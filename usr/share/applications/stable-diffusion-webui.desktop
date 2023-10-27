@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Stable Diffusion Web UI
+Name[ko]=스테이블 디퓨전 Web UI
+Comment=Start Stable Diffusion Web UI
+Exec=gnome-terminal -e "bash -c 'stable-diffusion-webui; exec bash'"
+Icon=stable-diffusion-webui
+Terminal=False
+Type=Application
+Categories=Utility;
+Keywords=Stable;Diffusion;Web;UI;스테이블;sdxl;
