@@ -1,3 +1,10 @@
+stable-diffusion-webui (1.0-3) unstable; urgency=low
+
+  * Add intel package
+   - https://github.com/openvinotoolkit/stable-diffusion-webui/wiki/Installation-on-Intel-Silicon
+
+ -- Kevin Kim <chaeya@gmail.com>  Fri, 27 Oct 2023 17:36:38 +0900
+ 
 stable-diffusion-webui (1.0-2) unstable; urgency=low
 
   * Fix venv error

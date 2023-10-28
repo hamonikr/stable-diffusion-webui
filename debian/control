@@ -9,7 +9,6 @@ Homepage: https://github.com/AUTOMATIC1111/stable-diffusion-webui
 Package: stable-diffusion-webui-amd
 Architecture: amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}, 
-          amdgpu-pro,
           git,
           python3, 
           python3-pip, 
@@ -17,10 +16,24 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
           libgl1,
           python3,
           python3-pip,
-          python3.10-venv,          
-          rocm-dkms
+          python3.10-venv          
 Description: Stable Diffusion Web UI Debian Package for AMD
  This package installs and runs the Stable Diffusion Web UI project for AMD GPUs.
+ It clones the project from GitHub and sets up a virtual environment for Python 3.10.
+
+Package: stable-diffusion-webui-intel
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+          git,
+          python3, 
+          python3-pip, 
+          libglib2.0-0,
+          libgl1,
+          python3,
+          python3-pip,
+          python3.10-venv          
+Description: Stable Diffusion Web UI Debian Package for Intel
+ This package installs and runs the Stable Diffusion Web UI project for Intel GPUs.
  It clones the project from GitHub and sets up a virtual environment for Python 3.10.
 
 Package: stable-diffusion-webui-nvidia
