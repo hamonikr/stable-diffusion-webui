@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# 모든 사용자의 홈 디렉토리를 찾음
+for home in /home/*; do
+  # 각 사용자의 홈 디렉토리에 설치 후 클론한 폴더 삭제
+  if [ -d "$home/stable-diffusion-webui" ]; then
+    sudo -u $(basename $home) rm -rf $home/stable-diffusion-webui || true
+  fi
+done

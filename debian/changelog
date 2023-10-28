@@ -1,3 +1,9 @@
+stable-diffusion-webui (1.0-4) unstable; urgency=low
+
+  * Remove data when package delete
+
+ -- Kevin Kim <chaeya@gmail.com>  Sat, 28 Oct 2023 11:07:21 +0900
+
 stable-diffusion-webui (1.0-3) unstable; urgency=low
 
   * Add intel package
